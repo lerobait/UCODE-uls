@@ -1,7 +1,7 @@
 #include "../inc/uls.h"
 
 t_item *mx_make_item_node(char *data) {
-    t_item *node = (t_item *)malloc(sizeof(t_item));
+    t_item *node = (t_item *)malloc(1 * sizeof(t_item));
 
     if (node) {
         node->name = mx_strdup(data);

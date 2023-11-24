@@ -36,6 +36,8 @@ static void mx_print_names_in_cols(t_item **names, int rows, int num, int max_le
 
         i++;
     }
+
+    mx_printchar('\n');
 }
 
 static void mx_print_names_in_line(t_item **names, int max_len) {

@@ -54,7 +54,7 @@ void mx_print_double_cases(t_item *print, t_size *sz) {
 
     } 
     else {
-        mx_print_sz_inf(print);
+        mx_printint(print->inf.st_size);
     }
     
     free(maj);

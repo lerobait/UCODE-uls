@@ -13,12 +13,12 @@ static char *mx_check_grp(t_item *total) {
 
 void mx_count_sz(t_size *sz, t_item *total) {
 
-    if (sz->link < (int)total->inf.st_nlink) { //FIX
-        sz->link = (int)total->inf.st_nlink;
+    if (sz->link < total->inf.st_nlink) { //FIX
+        sz->link = total->inf.st_nlink;
     }
 
-    if (sz->size < (int)total->inf.st_size) {
-        sz->size = (int)total->inf.st_size;
+    if (sz->size < total->inf.st_size) {
+        sz->size = total->inf.st_size;
     }
 
     char *name_grp = mx_check_grp(total);

@@ -22,7 +22,7 @@ static void mx_allocate_memory_and_open_dir(t_item ***args, int i, int count, t_
     }
 }
 
-void open_dir(t_item ***args, t_uls_flags *uls_flags) {
+void mx_open_dir(t_item ***args, t_uls_flags *uls_flags) {
     int i = 0;
 
     while ((*args)[i] != NULL) {

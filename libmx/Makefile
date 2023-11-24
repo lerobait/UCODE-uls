@@ -11,7 +11,7 @@ FLAGS = -Wall -Wextra -Werror -Wpedantic
 all: install clean
 
 install:
-		@clang-14 $(FLAGS) -I $(INC) -c $(SRC)/*.c
+		@clang $(FLAGS) -I $(INC) -c $(SRC)/*.c
 		@mkdir -p $(OBJ)
 		@cp *.o $(OBJ)
 		@ar -rc $(NAME) $(OBJ)/*.o

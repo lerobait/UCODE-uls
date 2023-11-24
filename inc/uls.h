@@ -94,7 +94,7 @@ void mx_sort_and_allocate_args(t_item ***files, t_item ***dirs, t_item ***errors
 void mx_split_files_and_dirs(t_item **args, t_type *number, t_item ***files, t_item ***dirs);
 t_item *mx_new_file_node(t_item *arg);
 void mx_clear_item_arr(t_item ***args, t_item **dirs);
-void open_dir(t_item ***args, t_uls_flags *uls_flags);
+void mx_open_dir(t_item ***args, t_uls_flags *uls_flags);
 int mx_count_directory_entries(t_item **arg, t_uls_flags *uls_flags);
 int mx_check_a(char *name, t_uls_flags *uls_flags);
 t_item *mx_create_new_node(char *name, char *path);
@@ -135,7 +135,6 @@ void mx_output_fl_g(t_item **names, t_uls_flags *uls_flags);
 //Delete
 void mx_del_double_arr(t_item ***args);
 void mx_del_files(t_item ***args, t_uls_flags *uls_flags);
-
 
 //Errors
 void mx_printerr(const char *s);

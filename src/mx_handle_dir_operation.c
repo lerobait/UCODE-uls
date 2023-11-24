@@ -6,7 +6,7 @@ void mx_handle_dir_operation(t_item ***args, t_uls_flags *uls_flags) {
         return;
     }
 
-    t_item **files = mx_process_files_and_dirs(args, uls_flags);
+    t_item **files = mx_process_files_and_dirs(&(*args), uls_flags);
 
     if (files) {
         mx_output_menu_with_flags(&files, uls_flags, 0);
@@ -19,5 +19,7 @@ void mx_handle_dir_operation(t_item ***args, t_uls_flags *uls_flags) {
         mx_del_double_arr(&files);
     }
 
-    open_dir(args, uls_flags);
+    if (*args) {
+        mx_open_dir(&(*args), uls_flags);
+    }
 }

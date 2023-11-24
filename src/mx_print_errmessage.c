@@ -8,5 +8,5 @@ void print_errmessage(char flag) {
     mx_printerr("uls: illegal option -- ");
     mx_print_char_err(flag);
     mx_printerr("\n");
-    mx_printerr("usage: uls [-ACGRSTcfglmortux1] [file ...]\n");
+    mx_printerr("usage: uls [-RAGCTScmog1lrxut] [file ...]\n");
 }
